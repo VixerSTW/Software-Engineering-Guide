@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links & Images in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lesson-container">
+        <h1>Links & Images in HTML</h1>
+        <p>Links allow navigation between web pages, and images help enhance visual appeal.</p>
+
+        <h2>1. Creating Links</h2>
+        <p>Use the <code>&lt;a&gt;</code> tag to create hyperlinks.</p>
+
+        <pre><code>&lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;</code></pre>
+
+        <p><strong>Attributes:</strong></p>
+        <ul>
+            <li><code>href</code>: Specifies the URL.</li>
+            <li><code>target="_blank"</code>: Opens link in a new tab.</li>
+        </ul>
+
+        <pre><code>&lt;a href="https://www.google.com" target="_blank"&gt;Open Google in New Tab&lt;/a&gt;</code></pre>
+
+        <h2>2. Linking to Other Pages</h2>
+        <p>Use relative paths to link to other pages in your website.</p>
+
+        <pre><code>&lt;a href="about.html"&gt;Go to About Page&lt;/a&gt;</code></pre>
+
+        <h2>3. Adding Images</h2>
+        <p>Use the <code>&lt;img&gt;</code> tag to display images.</p>
+
+        <pre><code>&lt;img src="image.jpg" alt="A beautiful scenery"&gt;</code></pre>
+
+        <p><strong>Attributes:</strong></p>
+        <ul>
+            <li><code>src</code>: Image source (URL or file path).</li>
+            <li><code>alt</code>: Alternative text for accessibility.</li>
+            <li><code>width</code> & <code>height</code>: Define image dimensions.</li>
+        </ul>
+
+        <pre><code>&lt;img src="image.jpg" alt="Scenery" width="300" height="200"&gt;</code></pre>
+
+        <h2>4. Using Images as Links</h2>
+        <p>Wrap an <code>&lt;img&gt;</code> tag inside an <code>&lt;a&gt;</code> tag.</p>
+
+        <pre><code>&lt;a href="https://www.google.com"&gt;
+    &lt;img src="logo.png" alt="Google Logo"&gt;
+&lt;/a&gt;</code></pre>
+
+        <p>Links and images are essential for navigation and visual content in web pages.</p>
+
+        <a href="html4.html" class="lesson-btn">Next Lesson</a>
+        <a href="html2.html" class="lesson-btn">Previous Lesson</a>
+    </div>
+</body>
+</html>

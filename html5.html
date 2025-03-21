@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Input Fields in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lesson-container">
+        <h1>Forms & Input Fields in HTML</h1>
+        <p>Forms allow users to input and submit data on a webpage.</p>
+
+        <h2>1. Creating a Basic Form</h2>
+        <p>The <code>&lt;form&gt;</code> tag wraps input fields and buttons.</p>
+
+        <pre><code>&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+
+        <h2>2. Input Field Types</h2>
+        <p>HTML provides various input types.</p>
+
+        <pre><code>&lt;form&gt;
+    &lt;label&gt;Text:&lt;/label&gt; &lt;input type="text"&gt;&lt;br&gt;
+    &lt;label&gt;Password:&lt;/label&gt; &lt;input type="password"&gt;&lt;br&gt;
+    &lt;label&gt;Email:&lt;/label&gt; &lt;input type="email"&gt;&lt;br&gt;
+    &lt;label&gt;Number:&lt;/label&gt; &lt;input type="number"&gt;&lt;br&gt;
+    &lt;label&gt;Checkbox:&lt;/label&gt; &lt;input type="checkbox"&gt;&lt;br&gt;
+    &lt;label&gt;Radio Button:&lt;/label&gt; &lt;input type="radio"&gt;&lt;br&gt;
+    &lt;label&gt;Date:&lt;/label&gt; &lt;input type="date"&gt;&lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+
+        <h2>3. Dropdowns & Textareas</h2>
+        <p>Use <code>&lt;select&gt;</code> for dropdowns and <code>&lt;textarea&gt;</code> for multi-line text input.</p>
+
+        <pre><code>&lt;form&gt;
+    &lt;label&gt;Select an option:&lt;/label&gt;
+    &lt;select&gt;
+        &lt;option&gt;Option 1&lt;/option&gt;
+        &lt;option&gt;Option 2&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;br&gt;
+    &lt;label&gt;Message:&lt;/label&gt;
+    &lt;textarea rows="4" cols="30"&gt;&lt;/textarea&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Send"&gt;
+&lt;/form&gt;</code></pre>
+
+        <h2>4. Form Attributes</h2>
+        <ul>
+            <li><code>action</code> - Specifies where to send form data.</li>
+            <li><code>method</code> - Defines how to send data (<code>GET</code> or <code>POST</code>).</li>
+            <li><code>required</code> - Ensures a field must be filled.</li>
+        </ul>
+
+        <p>Forms are essential for collecting user input on websites.</p>
+
+        <a href="html6.html" class="lesson-btn">Next Lesson</a>
+        <a href="html4.html" class="lesson-btn">Previous Lesson</a>
+    </div>
+</body>
+</html>

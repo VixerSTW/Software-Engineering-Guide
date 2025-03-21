@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lesson-container">
+        <h1>Multimedia (Audio & Video) in HTML</h1>
+        <p>HTML allows embedding audio and video files directly into webpages using the <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> tags.</p>
+
+        <h2>1. Adding Audio</h2>
+        <p>Use the <code>&lt;audio&gt;</code> tag to play sound files.</p>
+
+        <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+
+        <p><strong>Attributes:</strong></p>
+        <ul>
+            <li><code>controls</code> - Displays playback controls.</li>
+            <li><code>autoplay</code> - Plays the audio automatically.</li>
+            <li><code>loop</code> - Repeats the audio.</li>
+        </ul>
+
+        <h2>2. Adding Video</h2>
+        <p>Use the <code>&lt;video&gt;</code> tag to embed videos.</p>
+
+        <pre><code>&lt;video controls width="500"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+
+        <p><strong>Attributes:</strong></p>
+        <ul>
+            <li><code>controls</code> - Displays playback controls.</li>
+            <li><code>autoplay</code> - Starts playing automatically.</li>
+            <li><code>muted</code> - Mutes the video by default.</li>
+            <li><code>loop</code> - Repeats the video.</li>
+        </ul>
+
+        <h2>3. Embedding YouTube Videos</h2>
+        <p>Use an <code>&lt;iframe&gt;</code> to embed videos from YouTube.</p>
+
+        <pre><code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+
+        <h2>4. Best Practices for Multimedia</h2>
+        <ul>
+            <li>Use multiple formats for better browser compatibility.</li>
+            <li>Optimize file size for faster loading.</li>
+            <li>Provide captions for accessibility.</li>
+        </ul>
+
+        <p>Multimedia elements make web pages more interactive and engaging.</p>
+
+        <a href="html9.html" class="lesson-btn">Next Lesson</a>
+        <a href="html7.html" class="lesson-btn">Previous Lesson</a>
+    </div>
+</body>
+</html>
