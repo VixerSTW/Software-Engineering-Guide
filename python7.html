@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists & Tuples in Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lesson-container">
+        <h1>Lists & Tuples in Python</h1>
+        <p>Lists and tuples allow you to store multiple values in a single variable. They are used to organize and manipulate data efficiently.</p>
+
+        <h2>1. Lists</h2>
+        <p>A list is a collection that is ordered and changeable (mutable). Lists allow duplicate values.</p>
+
+        <pre><code># Creating a list
+fruits = ["Apple", "Banana", "Cherry"]
+print(fruits)  # Output: ['Apple', 'Banana', 'Cherry']
+
+# Accessing list elements
+print(fruits[0])  # Output: Apple
+
+# Modifying list elements
+fruits[1] = "Mango"
+print(fruits)  # Output: ['Apple', 'Mango', 'Cherry']</code></pre>
+
+        <h2>2. List Methods</h2>
+        <p>Python provides various methods to manipulate lists.</p>
+
+        <pre><code># Adding items
+fruits.append("Orange")  # Adds 'Orange' to the end
+print(fruits)  # Output: ['Apple', 'Mango', 'Cherry', 'Orange']
+
+# Removing items
+fruits.remove("Cherry")  
+print(fruits)  # Output: ['Apple', 'Mango', 'Orange']
+
+# Sorting a list
+fruits.sort()
+print(fruits)  # Output: ['Apple', 'Mango', 'Orange']</code></pre>
+
+        <h2>3. Tuples</h2>
+        <p>A tuple is similar to a list, but it is immutable (cannot be changed after creation).</p>
+
+        <pre><code># Creating a tuple
+colors = ("Red", "Green", "Blue")
+print(colors)  # Output: ('Red', 'Green', 'Blue')
+
+# Accessing tuple elements
+print(colors[1])  # Output: Green
+
+# Tuples are immutable (cannot change values)
+# colors[0] = "Yellow"  # This will cause an error</code></pre>
+
+        <h2>4. Tuple vs. List</h2>
+        <p>Key differences between lists and tuples:</p>
+        <ul>
+            <li><strong>Lists:</strong> Mutable (can be modified), slower, use more memory.</li>
+            <li><strong>Tuples:</strong> Immutable (cannot be changed), faster, use less memory.</li>
+        </ul>
+
+        <h2>5. Looping Through Lists & Tuples</h2>
+        <p>You can use loops to iterate over lists and tuples.</p>
+
+        <pre><code># Looping through a list
+for fruit in fruits:
+    print(fruit)
+
+# Looping through a tuple
+for color in colors:
+    print(color)</code></pre>
+
+        <p>Lists and tuples are essential data structures in Python, helping you manage and manipulate data efficiently.</p>
+
+        <a href="python8.html" class="lesson-btn">Next Lesson</a>
+        <a href="python6.html" class="lesson-btn">Previous Lesson</a>
+    </div>
+</body>
+</html>

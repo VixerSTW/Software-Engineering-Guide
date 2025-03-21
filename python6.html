@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lesson-container">
+        <h1>Functions in Python</h1>
+        <p>Functions allow you to write reusable code, making your programs more efficient and organized.</p>
+
+        <h2>1. Defining a Function</h2>
+        <p>A function is defined using the <code>def</code> keyword.</p>
+
+        <pre><code># Example: Defining and calling a function
+def greet():
+    print("Hello, welcome to Python!")
+
+greet()  # Output: Hello, welcome to Python!</code></pre>
+
+        <h2>2. Function Parameters</h2>
+        <p>Functions can take parameters to accept input values.</p>
+
+        <pre><code># Example: Function with parameters
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Vien")  # Output: Hello, Vien!</code></pre>
+
+        <h2>3. Returning Values</h2>
+        <p>Functions can return values using the <code>return</code> keyword.</p>
+
+        <pre><code># Example: Function returning a value
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print(result)  # Output: 8</code></pre>
+
+        <h2>4. Default Parameters</h2>
+        <p>You can set default values for parameters.</p>
+
+        <pre><code># Example: Function with default parameter
+def greet(name="Guest"):
+    print(f"Hello, {name}!")
+
+greet()         # Output: Hello, Guest!
+greet("Vien")   # Output: Hello, Vien!</code></pre>
+
+        <h2>5. Lambda Functions</h2>
+        <p>Lambda functions are small, anonymous functions that can take any number of arguments but have only one expression.</p>
+
+        <pre><code># Example: Lambda function
+multiply = lambda x, y: x * y
+
+print(multiply(3, 4))  # Output: 12</code></pre>
+
+        <p>Functions help make code reusable and maintainable, making them an essential part of Python programming.</p>
+
+        <a href="python7.html" class="lesson-btn">Next Lesson</a>
+        <a href="python5.html" class="lesson-btn">Previous Lesson</a>
+    </div>
+</body>
+</html>

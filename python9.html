@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Handling in Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lesson-container">
+        <h1>File Handling in Python</h1>
+        <p>Python allows you to read, write, and manipulate files. This is useful for working with data storage and automation.</p>
+
+        <h2>1. Opening and Reading Files</h2>
+        <p>Use the <code>open()</code> function to open a file. The default mode is read (<code>"r"</code>).</p>
+
+        <pre><code># Opening and reading a file
+file = open("example.txt", "r")
+content = file.read()
+print(content)
+file.close()</code></pre>
+
+        <h2>2. Writing to a File</h2>
+        <p>Use <code>"w"</code> mode to overwrite a file or <code>"a"</code> mode to append data.</p>
+
+        <pre><code># Writing to a file
+file = open("example.txt", "w")
+file.write("Hello, Python!")
+file.close()</code></pre>
+
+        <h2>3. Using <code>with</code> Statement</h2>
+        <p>The <code>with</code> statement automatically closes the file after use.</p>
+
+        <pre><code># Reading a file using with statement
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)</code></pre>
+
+        <h2>4. Working with Multiple Lines</h2>
+        <p>Use <code>readlines()</code> to read a file line by line.</p>
+
+        <pre><code># Reading multiple lines
+with open("example.txt", "r") as file:
+    lines = file.readlines()
+    for line in lines:
+        print(line.strip())</code></pre>
+
+        <h2>5. Checking if a File Exists</h2>
+        <p>Use the <code>os</code> module to check if a file exists before opening it.</p>
+
+        <pre><code>import os
+
+if os.path.exists("example.txt"):
+    print("File exists!")
+else:
+    print("File not found.")</code></pre>
+
+        <p>File handling is crucial for working with data, logs, and configurations in Python programs.</p>
+
+        <a href="python10.html" class="lesson-btn">Next Lesson</a>
+        <a href="python8.html" class="lesson-btn">Previous Lesson</a>
+    </div>
+</body>
+</html>

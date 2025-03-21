@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lesson-container">
+        <h1>Conditional Statements</h1>
+        <p>Conditional statements allow us to control the flow of a program by executing certain blocks of code based on conditions.</p>
+
+        <h2>1. The <code>if</code> Statement</h2>
+        <p>The <code>if</code> statement runs a block of code only if a specified condition is <code>True</code>.</p>
+
+        <pre><code># Example
+age = 18
+
+if age >= 18:
+    print("You are an adult.")</code></pre>
+
+        <h2>2. The <code>if-else</code> Statement</h2>
+        <p>The <code>else</code> statement runs a block of code when the <code>if</code> condition is <code>False</code>.</p>
+
+        <pre><code># Example
+age = 16
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")</code></pre>
+
+        <h2>3. The <code>elif</code> Statement</h2>
+        <p>Use <code>elif</code> (short for "else if") to check multiple conditions.</p>
+
+        <pre><code># Example
+score = 75
+
+if score >= 90:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+elif score >= 70:
+    print("Grade: C")
+else:
+    print("Grade: F")</code></pre>
+
+        <h2>4. Nested Conditionals</h2>
+        <p>We can nest conditions inside one another.</p>
+
+        <pre><code># Example
+age = 20
+has_id = True
+
+if age >= 18:
+    if has_id:
+        print("You can enter.")
+    else:
+        print("You need an ID.")
+else:
+    print("You are too young.")</code></pre>
+
+        <h2>5. The <code>pass</code> Statement</h2>
+        <p>If you don't want to execute anything inside an <code>if</code> block, use <code>pass</code> as a placeholder.</p>
+
+        <pre><code># Example
+x = 10
+
+if x > 5:
+    pass  # This does nothing</code></pre>
+
+        <p>Conditional statements are crucial for decision-making in Python programs.</p>
+
+        <a href="python5.html" class="lesson-btn">Next Lesson</a>
+        <a href="python3.html" class="lesson-btn">Previous Lesson</a>
+    </div>
+</body>
+</html>

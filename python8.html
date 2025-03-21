@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionaries & Sets in Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lesson-container">
+        <h1>Dictionaries & Sets in Python</h1>
+        <p>Dictionaries and sets are powerful data structures in Python that allow efficient data storage and retrieval.</p>
+
+        <h2>1. Dictionaries</h2>
+        <p>A dictionary is a collection of key-value pairs. Each key is unique and maps to a specific value.</p>
+
+        <pre><code># Creating a dictionary
+student = {
+    "name": "Vien",
+    "age": 16,
+    "grade": "A"
+}
+
+# Accessing values
+print(student["name"])  # Output: Vien</code></pre>
+
+        <h2>2. Dictionary Methods</h2>
+        <p>Python provides several useful methods for working with dictionaries.</p>
+
+        <pre><code># Adding a new key-value pair
+student["city"] = "Jakarta"
+
+# Updating values
+student["grade"] = "A+"
+
+# Removing a key-value pair
+del student["age"]
+
+# Looping through a dictionary
+for key, value in student.items():
+    print(f"{key}: {value}")</code></pre>
+
+        <h2>3. Sets</h2>
+        <p>A set is an unordered collection of unique items.</p>
+
+        <pre><code># Creating a set
+numbers = {1, 2, 3, 4, 5}
+
+# Adding elements
+numbers.add(6)
+
+# Removing elements
+numbers.remove(2)
+
+# Checking membership
+print(3 in numbers)  # Output: True</code></pre>
+
+        <h2>4. Set Operations</h2>
+        <p>Sets support mathematical operations like union, intersection, and difference.</p>
+
+        <pre><code># Example of set operations
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print(A | B)  # Union: {1, 2, 3, 4, 5, 6}
+print(A & B)  # Intersection: {3, 4}
+print(A - B)  # Difference: {1, 2}</code></pre>
+
+        <p>Dictionaries and sets are essential for storing and managing structured data efficiently.</p>
+
+        <a href="python9.html" class="lesson-btn">Next Lesson</a>
+        <a href="python7.html" class="lesson-btn">Previous Lesson</a>
+    </div>
+</body>
+</html>

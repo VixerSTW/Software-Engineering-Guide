@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling in Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lesson-container">
+        <h1>Exception Handling in Python</h1>
+        <p>Errors can occur in programs, and exception handling allows us to handle them gracefully without stopping execution.</p>
+
+        <h2>1. What is an Exception?</h2>
+        <p>An exception is an error that occurs during execution, such as dividing by zero or accessing an undefined variable.</p>
+
+        <pre><code># Example of an error (this will crash the program)
+print(10 / 0)  # ZeroDivisionError</code></pre>
+
+        <h2>2. Using <code>try</code> and <code>except</code></h2>
+        <p>We use <code>try</code> to test code and <code>except</code> to handle errors.</p>
+
+        <pre><code># Handling an exception
+try:
+    print(10 / 0)
+except ZeroDivisionError:
+    print("You can't divide by zero!")</code></pre>
+
+        <h2>3. Catching Multiple Exceptions</h2>
+        <p>We can handle different types of exceptions.</p>
+
+        <pre><code>try:
+    num = int("abc")  # This will cause a ValueError
+except ValueError:
+    print("Invalid input! Please enter a number.")
+except ZeroDivisionError:
+    print("Cannot divide by zero.")</code></pre>
+
+        <h2>4. Using <code>finally</code></h2>
+        <p>The <code>finally</code> block always runs, whether an exception occurs or not.</p>
+
+        <pre><code>try:
+    file = open("test.txt", "r")
+except FileNotFoundError:
+    print("File not found!")
+finally:
+    print("Execution completed.")</code></pre>
+
+        <h2>5. Raising Exceptions</h2>
+        <p>You can manually raise an exception using <code>raise</code>.</p>
+
+        <pre><code># Example of raising an exception
+age = -5
+if age < 0:
+    raise ValueError("Age cannot be negative!")</code></pre>
+
+        <p>Exception handling is essential for building robust and error-free applications.</p>
+
+        <a href="lessons.html" class="lesson-btn">Back to Lessons</a>
+        <a href="python9.html" class="lesson-btn">Previous Lesson</a>
+    </div>
+</body>
+</html>
